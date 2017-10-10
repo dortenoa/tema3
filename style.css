@@ -6,11 +6,13 @@
 
 #dorte {
   max-width: 100%;
-  /*height: auto;*/
+  height: auto;
   margin: 0;
   background-image: /*linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 100%),*/ url(img/breatherdesigntema3.jpg);
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*background-position: center;*/
 }
 
 #dorte header {
@@ -69,9 +71,9 @@
 
 #dorte main section h2{
   color: #ffffff;
-  font-size: 200%;
+  font-size: 2rem;
   text-align: center;
-  padding-top: 20%;
+  padding-top: 15%;
 }
 
 #dorte main section img {
@@ -86,7 +88,7 @@
   border-top: solid 3px white; /*#414033;*/
   margin: 0;
   background-color: rgba(129,76,79,0.4);
-  position: relative;
+  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
