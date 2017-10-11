@@ -8,11 +8,10 @@
   max-width: 100%;
   height: auto;
   margin: 0;
-  background-image: /*linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 100%),*/ url(img/breatherdesigntema3.jpg);
+  background-image: url(img/breatherdesigntema3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /*background-position: center;*/
 }
 
 #dorte header {
@@ -22,7 +21,10 @@
   border-bottom: solid 3px white; /*#414033;*/
   background-color: rgba(129,76,79,0.4); /*#814C4F;*/
   margin: 0;
-  /*opacity: 0.7;*/
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 #dorte header #header {
@@ -36,25 +38,44 @@
   float: left;
 }
 
-/*w3-padding w3-xlarge w3-text-orange {
+#dorte nav {
   position: absolute;
-  right: 15%;
-  margin-top: 20px;
-  font-size: 2.0em;
-  color: #ffffff;
-}*/
+  margin-top: 1.4em;
+  width: 80%;
+  margin-left: 10%;
+}
 
-/*#dorte header #header h1 {
-  padding: 25px 0 0 5px;
+#dorte nav ul {
+  list-style-type: none;
   margin: 0;
-  float: left;
-  font-family: 'Bowlby One', cursive, sans-serif;
-  color: #07395a;
-  font-size: 2em;
-}*/
+  /*padding: 0;*/
+  /*padding-left: 5%;*/
+  overflow: hidden;
+  padding-top: 12px;
+}
+
+#dorte nav ul li {
+      float: right;
+}
+
+#dorte nav ul li a {
+    display: block;
+    padding: 0px 5px 0px 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#dorte li a:hover {
+  color: rgb(83,112,129);
+}
+
+
 
 #dorte main {
-  margin: 0;
+  margin-top: 120px; /* Add a top margin to avoid content overlay */
   padding-top: 32px;
   height: 505px;
   padding-bottom: 10px;
@@ -62,24 +83,17 @@
 
 #dorte main section {
   width: 20%;
-  height: 30%;
-  /*padding: 8px 0;*/
-  margin: 0.7em;
-  background-color: #537081; /*rgba(255,255,255,0.2);*/
-  opacity: 0.3;
+  height: 25%;
+  padding: 4px 0;
+  margin: 0.75em;
+  background-color: rgba(83,112,129,0.6);
 }
 
-#dorte main section h2{
-  color: #ffffff;
-  font-size: 2rem;
-  text-align: center;
-  padding-top: 15%;
-}
-
-#dorte main section img {
-  height: 100%;
-  display: block;
-  margin: auto;
+#dorte main section h1 {
+    color: #ffffff;
+    font-size: 180%;
+    text-align: center;
+    padding-top: 20px;
 }
 
 #dorte footer {
@@ -102,12 +116,6 @@
   font-family: 'Varela Round', sans-serif;
   color: #ffffff;
 }
-
-#dorte footer p a img {
-  width: 20px;
-  margin-left: 1%;
-}
-
 /*forside slutter her */
 
 /*Hamburgermenuen starter her*/
@@ -133,7 +141,7 @@
   width: 100%;
   text-align: center;
   /*padding-left: 5%;*/
-  font-size: 10%;
+  font-size: 1rem;
   margin-top: 30px;
   font-family: 'Varela Round', sans-serif;
 }
@@ -141,14 +149,14 @@
 .navi a{
   padding: 8px;
   text-decoration: none;
-  font-size: 10em;
+  font-size: 1.2rem; /*tekststørrelse i åben menu*/
   color: #ffffff;
   display: block;
   transition: 0.3s;
 }
-/*giver farve nÃ¥r der holdes over indholdet*/
+/*giver farve når der holdes over indholdet*/
 .navi a:hover .navi a:focus{
-  color: #537081; /*#f1f1f1;*/
+  color: #537081;
 }
 
 /*position af x/lukke knappen i menuen*/
@@ -164,8 +172,38 @@ span{
   position: absolute;
   right: 5%;
   margin-top: 20px;
-  font-size: 2.0em;
+  font-size: 2em;
   color: #ffffff;
   cursor: pointer;
 }
 /*menuen slutter her*/
+
+/*start mediaqueries*/
+@media screen and (max-width: 560px) {
+/*  #dorte main section {
+    width: 97%;
+    height: 36%;
+    margin: 1.5%;
+    padding-right: 5%;
+}*/
+#dorte nav {
+  display: none;
+}
+}
+
+@media screen and (max-width: 845px) {
+  #dorte main section {
+    width: 97%;
+    height: 30%;
+    margin: 1.5%;
+    padding-right: 5%;
+}
+  #dorte main section h1{
+    font-size: 180%;
+    text-align: center;
+    padding-top: 25px;
+}
+
+
+}
+/*slut mediaqueries*/
