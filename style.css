@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
+/*header og navmenu*/
 #dorte header {
   height: 98px;
   padding: 0;
@@ -71,9 +71,7 @@
 #dorte li a:hover {
   color: rgb(83,112,129);
 }
-
-
-
+/*maincontent*/
 #dorte main {
   margin-top: 120px; /* Add a top margin to avoid content overlay */
   padding-top: 32px;
@@ -95,7 +93,7 @@
     text-align: center;
     padding-top: 20px;
 }
-
+/*footer*/
 #dorte footer {
   height: 98px;
   padding: 0;
@@ -119,7 +117,7 @@
 /*forside slutter her */
 
 /*Hamburgermenuen starter her*/
-/*hvordan overlayet ser ud nÃ¥r det kommer frem*/
+/*hvordan overlayet ser ud når det kommer frem*/
 /*Dorte koder Menu + Forside*/
 
 .navi{
@@ -129,7 +127,7 @@
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #537081; /*baggrund menu ud rgba(0,0,0,0.9);*/
+  background-color: #537081;
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -140,7 +138,6 @@
   top: 25%;
   width: 100%;
   text-align: center;
-  /*padding-left: 5%;*/
   font-size: 1rem;
   margin-top: 30px;
   font-family: 'Varela Round', sans-serif;
@@ -154,9 +151,10 @@
   display: block;
   transition: 0.3s;
 }
+
 /*giver farve når der holdes over indholdet*/
-.navi a:hover .navi a:focus{
-  color: #537081;
+.navi a:hover, .overlay a:focus {
+    color: #f1f1f1;
 }
 
 /*position af x/lukke knappen i menuen*/
@@ -180,30 +178,20 @@ span{
 
 /*start mediaqueries*/
 @media screen and (max-width: 560px) {
-/*  #dorte main section {
-    width: 97%;
-    height: 36%;
-    margin: 1.5%;
-    padding-right: 5%;
-}*/
 #dorte nav {
-  display: none;
+  display: none; /*nav menubar forsvinder*/
 }
 }
 
 @media screen and (max-width: 845px) {
-  #dorte main section {
+  #dorte main section {/*de 3 kasser ændres til fuldskærmsstørrelse*/
     width: 97%;
     height: 30%;
     margin: 1.5%;
     padding-right: 5%;
 }
   #dorte main section h1{
-    font-size: 180%;
-    text-align: center;
-    padding-top: 25px;
+    padding-top: 25px; /*lidt større padding over h1*/
 }
-
-
 }
 /*slut mediaqueries*/
