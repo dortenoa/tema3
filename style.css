@@ -43,19 +43,18 @@
   margin-top: 1.4em;
   width: 80%;
   margin-left: 10%;
+  padding-right: 5px;
 }
 
 #dorte nav ul {
   list-style-type: none;
   margin: 0;
-  /*padding: 0;*/
-  /*padding-left: 5%;*/
-  overflow: hidden;
+  overflow:  hidden;
   padding-top: 12px;
 }
 
 #dorte nav ul li {
-      float: right;
+    float: right;
 }
 
 #dorte nav ul li a {
@@ -71,6 +70,17 @@
 #dorte li a:hover {
   color: rgb(83,112,129);
 }
+
+#dorte .lup {
+  height: 90%;
+  padding: 8px 70px 20px 10px;
+  margin: 0.2em;
+  float: right;
+  overflow: hidden;
+}
+#dorte .lup img {
+
+  }
 /*maincontent*/
 #dorte main {
   margin-top: 120px; /* Add a top margin to avoid content overlay */
@@ -92,7 +102,9 @@
     font-size: 180%;
     text-align: center;
     padding-top: 20px;
+    font-family: 'Varela Round', sans-serif;
 }
+
 /*footer*/
 #dorte footer {
   height: 98px;
@@ -154,7 +166,7 @@
 
 /*giver farve når der holdes over indholdet*/
 .navi a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: rgba(129,76,79,0.4);
 }
 
 /*position af x/lukke knappen i menuen*/
@@ -183,7 +195,7 @@ span{
 }
 }
 
-@media screen and (max-width: 845px) {
+@media screen and (max-width: 880px) {
   #dorte main section {/*de 3 kasser ændres til fuldskærmsstørrelse*/
     width: 97%;
     height: 30%;
@@ -191,7 +203,7 @@ span{
     padding-right: 5%;
 }
   #dorte main section h1{
-    padding-top: 25px; /*lidt større padding over h1*/
+    padding-top: 30px; /*lidt større padding over h1*/
 }
 }
 /*slut mediaqueries*/
