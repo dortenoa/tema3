@@ -21,7 +21,6 @@
   border-bottom: solid 3px white; /*#414033;*/
   background-color: rgba(129,76,79,0.4); /*#814C4F;*/
   margin: 0;
-  /*overflow: hidden;*/
   position: fixed;
   top: 0;
   width: 100%;
@@ -70,30 +69,14 @@
 #dorte li a:hover {
   color: rgb(83,112,129);
 }
-/*flex*/
-/*.famsm {
-  display: inline-block;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding-left: 2%;
-  background-color: rgba(255,255,255,0.5);
-
-}
-.famsm h2 {
-  font-size: 150%;
-  font-family: 'Varela Round', sans-serif;
-}*/
-.flex-item h3 {
+.flex-item h3, h2, h1 {
   font-family: 'Varela Round', sans-serif;
 }
 .flex-item p {
   font-family: 'Varela Round', sans-serif;
   font-size: 80%;
 }
-
 .flex-container {
-    /*display: -webkit-flex;*/
     margin-top: 9em;
     margin-left: 3em;
     margin-right: 7em;
@@ -101,12 +84,10 @@
     display: flex;
     width: 88%;
     height: auto;
-    /*flex-wrap: wrap;*/
-    text-align: center;
     background-color: rgb(255,255,255);
     justify-content: space-around;
     z-index: -100;
-
+    opacity: 0.95;
 }
 
 .flex-item {
@@ -114,71 +95,7 @@
     width: 100%;
     height: 100%;
     margin: 4% 2% 3% 1%;
-    border-style:  solid;
 }
-
-/*#dorte main {
-  margin: 0 10.9em;
-  padding-top: 202px;
-  height: 505px;
-  padding-bottom: 10px;
-
-}
-
-#dorte main section {
-  width: 50%;
-  height: 70%;
-  margin: 10.9em;
-  background-color: #ffffff;
-  opacity: 0.7;
-  display: inline-block;
-  margin: auto;
-  padding-top: 1.5%;
-  padding-bottom: 2%;
-  padding-left: 1%;
-}
-
-#dorte main section h2{
-  color: #000000;
-  font-size: 3rem;
-  text-align: left;
-  padding-top: 1%;
-  padding-left: 2%
-
-}
-
-#dorte #box{
-  display: -webkit-flex;
-  -webkit-align-items: center;
-
-}
-
-#dorte main section h3{
-  color: #000000;
-  font-size: 2rem;
-  text-align: left;
-  padding-top: 0.5%;
-  padding-left: 2%
-
-}
-#dorte main section p{
-  color: #000000;
-  font-size: 1.5rem;
-  text-align: left;
-  padding-top: 0%;
-  padding-left: 2%
-
-}
-#dorte main section img {
-  height: 100%;
-  display: block;
-  margin: auto;
-
-}
-#dorte iframe {
-margin-top: 0em;
-}
-*/
 
 #dorte footer {
   height: 98px;
@@ -191,7 +108,6 @@ margin-top: 0em;
   bottom: 0;
   left: 0;
   height: 34px;
-  /*opacity: 0.7;*/
 }
 
 
@@ -232,7 +148,6 @@ margin-top: 0em;
   top: 25%;
   width: 100%;
   text-align: center;
-  /*padding-left: 5%;*/
   font-size: 10%;
   margin-top: 30px;
   font-family: 'Varela Round', sans-serif;

@@ -21,7 +21,6 @@
   border-bottom: solid 3px white; /*#414033;*/
   background-color: rgba(129,76,79,0.4); /*#814C4F;*/
   margin: 0;
-  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
@@ -84,13 +83,13 @@
 /*maincontent*/
 #dorte main {
   margin-top: 120px; /* Add a top margin to avoid content overlay */
-  padding-top: 32px;
+  /*padding-top: 32px;
   height: 505px;
-  padding-bottom: 10px;
+  padding-bottom: 10px;*/
 }
 
 #dorte main section {
-  width: 20%;
+  /*width: 20%;*/
   height: 25%;
   padding: 4px 0;
   margin: 0.75em;
@@ -98,11 +97,11 @@
 }
 
 #dorte main section h1 {
-    color: #ffffff;
-    font-size: 180%;
+    /*color: #ffffff;*/
+    /*font-size: 180%;*/
     text-align: center;
     padding-top: 20px;
-    font-family: 'Varela Round', sans-serif;
+    /*font-family: 'Varela Round', sans-serif;*/
 }
 
 /*footer*/
@@ -200,7 +199,7 @@ span{
     width: 97%;
     height: 30%;
     margin: 1.5%;
-    padding-right: 5%;
+    /*padding-right: 5%;*/
 }
   #dorte main section h1{
     padding-top: 30px; /*lidt større padding over h1*/
@@ -211,73 +210,71 @@ span{
 /*Carolines main start*/
 /*#carolien main {
   margin: auto;
-
 }
 #carolien main section {
   margin-top: auto;
   background-color: blue;
 }
-
-/*#dorte main {
-  margin-top: 120px; /* Add a top margin to avoid content overlay */
-/*  padding-top: 32px;
-  height: 505px;
-  padding-bottom: 10px;
-}
-
-#dorte main section {
-  width: 20%;
-  height: 25%;
-  padding: 4px 0;
-  margin: 0.75em;
-  background-color: rgba(83,112,129,0.6);
-}
-
-#dorte main section h1 {
-    color: #ffffff;
-    font-size: 180%;
-    text-align: center;
-    padding-top: 20px;
-    font-family: 'Varela Round', sans-serif;
-
 /*indretning*/
+/*NEJ
+.overskrift #caroline {
+  width: 50%
+}
+*/
+/*virker ikke
+#caroline main section h1 h2 {
+  width: 50%;
+}
+*/
+#caroline section {
+  /*background-color: black;*/
+  /*width: 100%;
+  height: auto;*/
+}
+
 #caroline h1 {
   /*background-color: rgba(83,112,129,0.6);*/
   text-align: center;
-  background-color: blue;
+  /*background-color: blue;*/
 }
 
 #caroline h2 {
-  background-color: green;
+  /*background-color: green;*/
   /*background-color: rgba(83,112,129,0.6);*/
   text-align: center;
 }
 
-}
-
 #caroline article {
+  /*Viker ikke mednav bar og hamburger
+  background-color: #FFFFFF;
+  opacity: 0.95;*/
   /*background-color: rgba(83,112,129,0.6);*/
   text-align: center;
   display: block;
   width: 100%;
   height: auto;
+  padding: 5%;
 }
 
 #caroline figure {
-  background-color: orange;
+  /*background-color: orange;*/
   /*max-width: 100%;
   height: auto;*/
   display: block;
 }
 
 #caroline img {
-  background-color: red;
+  /*background-color: blue;*/
+  max-width: 100%;
+  height: auto;
   display: block;
   margin: auto;
+  margin-top: 0%;
   /*width: 50%*/
 }
 
 @media only screen and (min-width: 700px) {
+
   #caroline .flex-container {
     display: flex;
     /*flex-direction: row;*/
@@ -298,7 +295,17 @@ span{
     margin: 0;
   }
 
+  #caroline img {
+    padding-top: 25%;
+  }
+  #caroline figure {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
   #caroline .flex-item {
+
     margin: 0;
     flex-direction: row;
   }
@@ -309,17 +316,6 @@ span{
   }
 
 }
-  #caroline figure {
-    /*width: 100%;*/
-    height: auto;
-    margin: 0;
-  }
-  #caroline img {
-    max-width: 100%;
-    height:auto;
-  }
 
 
-
-}
 /*carolines main slut*/
