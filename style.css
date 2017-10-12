@@ -193,5 +193,8 @@ span{
   #dorte main section h1{
     padding-top: 30px; /*lidt større padding over h1*/
 }
+#dorte nav {
+  display: none; /*nav menubar forsvinder*/
+}
 }
 /*slut mediaqueries*/
