@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+  <!-- Webbrowser karaktersæt UTF-8 for de fleste symboler og karakterer -->
+  <meta charset="utf-8">
+  <!-- Titel for siden -->
+  <title>IN2 Design</title>
+  <!-- Link til stylesheet -->
+  <link href="nhstyle.css" rel="stylesheet" type="text/css">
+  <!-- Link til font google -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+      <!-- Meta tag for mobilvisning -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Search Icon -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <header>
+    <div id="header">
+      <a href="index.html"><img src="./img/logoin2.png" alt="IN2 logo"></a>
+        <!-- navigationsbar menu -->
+    <nav>
+      <ul>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="inspiration.html">Inspiration</a></li>
+        <li><a href="indretning.html">Indretning</a></li>
+        <li><a href="webshop.html">Webshop</a></li>
+        </ul>
+      </nav>
+      <!-- hamburgermenuen -->
+      <div id=mynav class=navi> <!--yderste lag-->
+        <a href="javascript:void(0)" class="closebut" onclick="closeNav()">&times;</a> <!-- knap til at lukke nav-->
+
+        <div class="overlayer"> <!--indhold i yderste lag-->
+          <a href="index.html">Forside</a>
+          <a href="webshop.html">Webshop</a>
+          <a href="indretning.html">Indretning</a>
+          <a href="inspiration.html">Inspiration</a>
+          <a href="kontakt.html">Kontakt</a>
+        </div>
+      </div>
+      <span onclick="openNav()">☰</span> <!--open nav-->
+    </div>
+  </header>
+
+
+
+
+<!-- Produktside kodet af Nicole -->
+
+<!-- Main har fået id, så det jeg styler kun styler mine ting -->
+  <main id="nicole">
+
+<!-- img er brugt til at sætte et billede ind af produktet - skiftes for hver html-fil / farve -->
+    <img src="./img/grey.png" alt="ægget i grå">
+
+<!-- Knapperne til at vælge hvilken farve produktet skal være, brugt section for at sætte dem ind i en kasse, brugt a for at linke til de andre farver -->
+  <section class="farver">
+    <a href="./grey.html" id="altgrey" role="button">Blå</a>
+    <a href="./red.html" id="altred" role="button">Blå</a>
+    <a href="./blue.html" id="altblue" role="button">Blå</a>
+  </section>
+
+
+<!-- section brugt til at lave class "left" for nemmere, at kunne positionere elementerne -->
+<section class="left">
+
+<!-- section brugt til at lave class "indhold" for nemmere, at kunne positionere elementerne -->
+  <section class="indhold">
+    <h2>Arne Jacobsen</h2>
+    <h1>Ægget</h1>
+    <h3>DKK 38.659</h3>
+  </section>
+
+<!-- form er en kasse for "indkøbskurven" -->
+    <form class="indhold" action="shoppingbag.html"><!-- siden den skal gå hen på, når man trykker på læg i kurv -->
+<!-- input er brugt til at sætte ting ind - her hvor mange stk man skal have, og en "læg i kurven" knap -->
+      Antal <input type="number" value="1">
+      <input type="submit" value="Læg i kurv">
+    </form>
+</section>
+
+<!-- article er en boks til artikel. Er brugt til at gøre det nemmere, at kunne positionere ting -->
+    <article class="omegg">
+    <h4>Beskrivelse</h4>
+    <p>Materiale: Stof</p>
+    <p>Ægget er opbygget med vandrette og lodrette overflader. Teknikken som lå bag den, var Jacobsen en af de første til at anvende - en stærk indre skal af skum under polstringen, hvilket er med til at gøre siddekomforten helt enestående. Stolen kan fås i flere farver og materialer. </p>
+  </article>
+
+<!-- iframe bruges til at sætte youtube video ind -->
+<iframe width="374" height="210" src="https://www.youtube.com/embed/6ZDQ2kVrxdM" allowfullscreen></iframe>
+
+
+  </main>
+
+<!-- Nicole kodning slutter -->
+
+
+
+
+
+
+
+
+
+<footer>
+  <p>&copy; IN2 DESIGN 2017 - All Rights Reserved</p>
+</footer>
+
+<script> /* javascript til at åbne menuen, når der klikkes på ☰-*/
+function openNav(){
+document.getElementById("mynav").style.width = "100%";
+}
+function closeNav(){ /*javascript til at lukke menuen når der trykkes på x */
+document.getElementById("mynav").style.width = "0%";
+}
+</script>
+
+</body>
+</html>

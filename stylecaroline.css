@@ -21,7 +21,7 @@
   border-bottom: solid 3px white; /*#414033;*/
   background-color: rgba(129,76,79,0.4); /*#814C4F;*/
   margin: 0;
-  /*overflow: hidden;*/
+  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
@@ -71,8 +71,17 @@
   color: rgb(83,112,129);
 }
 
+#dorte .lup {
+  height: 90%;
+  padding: 8px 70px 20px 10px;
+  margin: 0.2em;
+  float: right;
+  overflow: hidden;
+}
+#dorte .lup img {
 
-/*ilhan maincontent*/
+  }
+/*maincontent*/
 #dorte main {
   margin-top: 120px; /* Add a top margin to avoid content overlay */
   padding-top: 32px;
@@ -108,6 +117,7 @@
   bottom: 0;
   left: 0;
   height: 34px;
+  /*opacity: 0.7;*/
 }
 
 #dorte footer p {
@@ -197,3 +207,119 @@ span{
 }
 }
 /*slut mediaqueries*/
+
+/*Carolines main start*/
+/*#carolien main {
+  margin: auto;
+
+}
+#carolien main section {
+  margin-top: auto;
+  background-color: blue;
+}
+
+/*#dorte main {
+  margin-top: 120px; /* Add a top margin to avoid content overlay */
+/*  padding-top: 32px;
+  height: 505px;
+  padding-bottom: 10px;
+}
+
+#dorte main section {
+  width: 20%;
+  height: 25%;
+  padding: 4px 0;
+  margin: 0.75em;
+  background-color: rgba(83,112,129,0.6);
+}
+
+#dorte main section h1 {
+    color: #ffffff;
+    font-size: 180%;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Varela Round', sans-serif;
+
+/*indretning*/
+#caroline h1 {
+  /*background-color: rgba(83,112,129,0.6);*/
+  text-align: center;
+  background-color: blue;
+}
+
+#caroline h2 {
+  background-color: green;
+  /*background-color: rgba(83,112,129,0.6);*/
+  text-align: center;
+}
+
+}
+
+#caroline article {
+  /*background-color: rgba(83,112,129,0.6);*/
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#caroline figure {
+  background-color: orange;
+  /*max-width: 100%;
+  height: auto;*/
+  display: block;
+}
+
+#caroline img {
+  background-color: red;
+  display: block;
+  margin: auto;
+  /*width: 50%*/
+}
+
+@media only screen and (min-width: 700px) {
+  #caroline .flex-container {
+    display: flex;
+    /*flex-direction: row;*/
+    width: 100%;
+    height: auto;
+    }
+
+  #caroline .flex-container-one {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+  #caroline article {
+    /*display: flex;
+    flex-direction: row;*/
+    height: auto;
+    margin: 0;
+  }
+
+  #caroline .flex-item {
+    margin: 0;
+    flex-direction: row;
+  }
+
+  #caroline .flex-item-one {
+    margin: 0;
+    flex-direction: row;
+  }
+
+}
+  #caroline figure {
+    /*width: 100%;*/
+    height: auto;
+    margin: 0;
+  }
+  #caroline img {
+    max-width: 100%;
+    height:auto;
+  }
+
+
+
+}
+/*carolines main slut*/

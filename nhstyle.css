@@ -1,0 +1,422 @@
+*{
+  box-sizing: border-box;
+}
+
+/*Dorte koder Forsiden*/
+
+body {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  background-image: url(img/breatherdesigntema3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/*header og navmenu*/
+header {
+  height: 98px;
+  padding: 0;
+  padding-bottom: 20px;
+  border-bottom: solid 3px white; /*#414033;*/
+  background-color: rgba(129,76,79,0.4); /*#814C4F;*/
+  margin: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+
+header #header {
+  height: 98px;
+}
+
+header #header img {
+  height: 90%;
+  padding: 8px 0 0 5%;
+  margin: 0;
+  float: left;
+}
+
+nav {
+  position: absolute;
+  margin-top: 1.4em;
+  width: 80%;
+  margin-left: 10%;
+  padding-right: 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  overflow:  hidden;
+  padding-top: 12px;
+}
+
+nav ul li {
+    float: right;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0px 5px 0px 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'Varela Round', sans-serif;
+}
+
+li a:hover {
+  color: rgb(83,112,129);
+}
+
+
+  /*footer*/
+  footer {
+    height: 98px;
+    padding: 0;
+    border-top: solid 3px white; /*#414033;*/
+    margin: 0;
+    background-color: rgba(129,76,79,0.4);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 34px;
+    /*opacity: 0.7;*/
+  }
+
+  footer p {
+    text-align: center;
+    font-size: 0.75em;
+    font-family: 'Varela Round', sans-serif;
+    color: #ffffff;
+  }
+  /*forside slutter her */
+
+  /*Hamburgermenuen starter her*/
+  /*hvordan overlayet ser ud når det kommer frem*/
+  /*Dorte koder Menu + Forside*/
+
+  .navi{
+    height: 100%;
+    width:0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #537081;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  /*hvordan ser indholdet ud i hamburgermenuen*/
+  .overlayer{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 30px;
+    font-family: 'Varela Round', sans-serif;
+  }
+  /*hvordan linkene ser ud i overlay*/
+  .navi a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 1.2rem; /*tekststørrelse i åben menu*/
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+
+  /*giver farve når der holdes over indholdet*/
+  .navi a:hover, .overlay a:focus {
+      color: rgba(129,76,79,0.4);
+  }
+
+  /*position af x/lukke knappen i menuen*/
+  .navi .closebut{
+    position: absolute;
+    top: 15px;
+    right: 5%;
+    padding: 0;
+    font-size: 60px;
+  }
+  /*hamburgerikon*/
+  span{
+    position: absolute;
+    right: 5%;
+    margin-top: 20px;
+    font-size: 2em;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  /*menuen slutter her*/
+
+  /*start mediaqueries*/
+  @media screen and (max-width: 560px) {
+  nav ul {
+    display: none; /*nav menubar forsvinder*/
+  }
+  }
+  /*slut mediaqueries*/
+
+
+
+
+/*Nicole koder produktside*/
+
+/*Main på produktside har fået id="nicole", så css kun påvirker produktside*/
+
+/*HUSK TIL NÆSTE GANG REM/EM*/
+
+/*Styling for mobil - mobile first!*/
+
+/*styling for main-boksen*/
+#nicole {
+  margin: 8em 5%;
+  padding-top: 1%;
+  padding-bottom: 10px;
+  background-color: white;
+  opacity: 0.95;
+  z-index: -100;
+}
+
+/*styling for billede*/
+#nicole img{
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+  max-width: 400px;
+  /*opacity: none;*/
+}
+
+/*styling for iframe*/
+#nicole iframe{
+  display: none;
+}
+
+
+/*Styling for alle h*/
+#nicole h1, #nicole h2, #nicole h3, #nicole h4{
+  font-family: 'Varela Round', sans-serif;
+}
+
+/*Styling for kun h2*/
+#nicole h2{
+  font-size: 120%;
+  margin: 0;
+  /*background-color: green;*/
+}
+
+/*Styling for kun h1*/
+#nicole h1{
+  font-size: 250%;
+  margin: 0;
+  /*background-color: blue;*/
+}
+
+/*Styling for kun h3*/
+#nicole h3{
+  font-size: 90%;
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+/*Styling for kun h4*/
+#nicole h4{
+  margin: 2%;
+}
+
+/*Styling for kun p*/
+#nicole p{
+  font-family: 'Open Sans Condensed';
+  margin: 2%;
+  font-size: 17px;
+}
+
+/*Styling for boksen til antal stk.*/
+#nicole input[type=number]{
+  display: inline-block;
+  width: 10%;
+  text-align: center;
+}
+
+/*Styling for "Læg i kurven"-knap, når musen er kommer henover*/
+#nicole input[type=submit]:hover{
+  text-decoration: underline;
+}
+
+/*Styling for class="omegg"*/
+#nicole .omegg{
+  border: 0.5px solid black;
+  margin: 3.5% 2%;
+}
+
+/*Styling for class="indhold"*/
+#nicole .indhold{
+  margin: 3.5%
+}
+
+/*Styling for a i class="farver"*/
+#nicole .farver a{
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 15px;
+  display: inline-block;
+}
+
+/*Styling for class="farver"*/
+#nicole .farver{
+  text-align: center;
+}
+
+/*Styling for id="altgrey" - knappen for grå*/
+#nicole #altgrey{
+  background-color: grey;
+  color: grey;
+}
+
+/*Styling for id="altred" - knappen for rød*/
+#nicole #altred{
+  background-color: red;
+  color: red;
+}
+
+/*Styling for id="altblue" - knappen for blå*/
+#nicole #altblue{
+  background-color: blue;
+  color: blue;
+}
+
+@media screen and (min-width:338px) {
+  #nicole iframe{
+    display: block;
+    margin: 3% auto;
+    width: 280px;
+    height: 158px;
+  }
+}
+/*Styling for elementerne når skærmen bliver breddere end 760px*/
+@media screen and (min-width:760px) {
+  #nicole{
+    height: 1030px;
+  }
+
+  #nicole .left{
+    float: left;
+    clear: left;
+    max-width: 45%;
+    margin: 1% 0 2% 5%;
+  }
+
+  #nicole .omegg{
+    float: right;
+    clear: right;
+    max-width: 45%;
+    display: inline-block;
+    margin: 1% 5% 0 0;
+    border: none;
+  }
+
+  #nicole h1{
+    font-size: 300%;
+  }
+
+  #nicole h3{
+    font-size: 145%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+
+  #nicole p{
+    font-size: 19px;
+  }
+}
+
+/*Styling for elementerne når skærmen er breddere end 1024px*/
+@media screen and (min-width:1024px) {
+  #nicole{
+    height: 685px;
+    margin-bottom: 5%;
+  }
+
+  #nicole img, #nicole iframe{
+    max-width: 300px;
+    float: left;
+    margin-left: 10%;
+  }
+
+  #nicole h1{
+    font-size: 300%;
+  }
+
+  #nicole .left, #nicole .omegg{
+    float: right;
+    margin-right: 10%;
+  }
+
+  #nicole .left{
+    clear: right;
+    margin-top: 3%;
+    max-width: 35%;
+    margin-right: 9%;
+  }
+
+  #nicole .omegg{
+    max-width: 35%;
+    clear: right;
+    margin-right: 9%;
+    margin-top: 1%;
+  }
+
+  #nicole .farver{
+    text-align: left;
+    display: inline-block;
+    position: absolute;
+    top: 478px;
+    left: 22%;
+    margin-bottom: 20em;
+    padding-top: 2%;
+  }
+
+  #nicole input[type=number]{
+    width: 20%;
+  }
+
+  #nicole p{
+    font-size: 17px;
+  }
+}
+
+/*Styling for elementerne når skærmen bliver breddere end 1097px*/
+@media screen and (min-width:1097px) {
+  #nicole .omegg{
+    max-width: 344px;
+  }
+
+  #nicole .farver{
+    position: absolute;
+    top: 478px;
+    left: 21%;
+  }
+}
+
+@media screen and (min-width:1104px) {
+  #nicole .farver{
+    top: 483px;
+  }
+}
+
+@media screen and (min-width:1445px) {
+  #nicole iframe{
+    margin-top: 3%;
+  }
+}
+
+
+/*Nicole kodning slutter*/

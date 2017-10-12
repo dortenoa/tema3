@@ -8,12 +8,13 @@
   max-width: 100%;
   height: auto;
   margin: 0;
-  background-image: url(img/breatherdesigntema3.jpg);
+  background-image: /*linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 100%),*/ url(img/breatherdesigntema3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  /*background-position: center;*/
 }
-/*header og navmenu*/
+
 #dorte header {
   height: 98px;
   padding: 0;
@@ -21,10 +22,7 @@
   border-bottom: solid 3px white; /*#414033;*/
   background-color: rgba(129,76,79,0.4); /*#814C4F;*/
   margin: 0;
-  /*overflow: hidden;*/
-  position: fixed;
-  top: 0;
-  width: 100%;
+  /*opacity: 0.7;*/
 }
 
 #dorte header #header {
@@ -71,32 +69,68 @@
   color: rgb(83,112,129);
 }
 
-
-/*ilhan maincontent*/
 #dorte main {
-  margin-top: 120px; /* Add a top margin to avoid content overlay */
-  padding-top: 32px;
+  margin: 0 10.9em;
+  padding-top: 202px;
   height: 505px;
   padding-bottom: 10px;
+
 }
 
 #dorte main section {
-  width: 20%;
-  height: 25%;
-  padding: 4px 0;
-  margin: 0.75em;
-  background-color: rgba(83,112,129,0.6);
+  width: 50%;
+  height: 70%;
+  margin: 10.9em;
+  background-color: #ffffff; /*rgba(255,255,255,0.2);*/
+  opacity: 0.7;
+  display: inline-block;
+  margin: auto;
+  padding-top: 1.5%;
+  padding-bottom: 2%;
+  padding-left: 1%;
 }
 
-#dorte main section h1 {
-    color: #ffffff;
-    font-size: 180%;
-    text-align: center;
-    padding-top: 20px;
-    font-family: 'Varela Round', sans-serif;
+#dorte main section h2{
+  color: #000000;
+  font-size: 3rem;
+  text-align: left;
+  padding-top: 1%;
+  padding-left: 2%
+
 }
 
-/*footer*/
+#dorte #box{
+  display: -webkit-flex;
+  -webkit-align-items: center;
+
+}
+
+#dorte main section h3{
+  color: #000000;
+  font-size: 2rem;
+  text-align: left;
+  padding-top: 0.5%;
+  padding-left: 2%
+
+}
+#dorte main section p{
+  color: #000000;
+  font-size: 1.5rem;
+  text-align: left;
+  padding-top: 0%;
+  padding-left: 2%
+
+}
+#dorte main section img {
+  height: 100%;
+  display: block;
+  margin: auto;
+
+}
+#dorte iframe {
+margin-top: 0em;
+}
+
 #dorte footer {
   height: 98px;
   padding: 0;
@@ -108,7 +142,9 @@
   bottom: 0;
   left: 0;
   height: 34px;
+  /*opacity: 0.7;*/
 }
+
 
 #dorte footer p {
   text-align: center;
@@ -116,10 +152,17 @@
   font-family: 'Varela Round', sans-serif;
   color: #ffffff;
 }
+
+#dorte footer p a img {
+  width: 20px;
+  margin-left: 1%;
+}
+
+
 /*forside slutter her */
 
 /*Hamburgermenuen starter her*/
-/*hvordan overlayet ser ud når det kommer frem*/
+/*hvordan overlayet ser ud nÃ¥r det kommer frem*/
 /*Dorte koder Menu + Forside*/
 
 .navi{
@@ -129,7 +172,7 @@
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #537081;
+  background-color: #537081; /*baggrund menu ud rgba(0,0,0,0.9);*/
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -140,7 +183,8 @@
   top: 25%;
   width: 100%;
   text-align: center;
-  font-size: 1rem;
+  /*padding-left: 5%;*/
+  font-size: 10%;
   margin-top: 30px;
   font-family: 'Varela Round', sans-serif;
 }
@@ -148,15 +192,14 @@
 .navi a{
   padding: 8px;
   text-decoration: none;
-  font-size: 1.2rem; /*tekststørrelse i åben menu*/
+  font-size: 10em;
   color: #ffffff;
   display: block;
   transition: 0.3s;
 }
-
-/*giver farve når der holdes over indholdet*/
-.navi a:hover, .overlay a:focus {
-    color: rgba(129,76,79,0.4);
+/*giver farve nÃ¥r der holdes over indholdet*/
+.navi a:hover .navi a:focus{
+  color: #537081; /*#f1f1f1;*/
 }
 
 /*position af x/lukke knappen i menuen*/
@@ -172,28 +215,8 @@ span{
   position: absolute;
   right: 5%;
   margin-top: 20px;
-  font-size: 2em;
+  font-size: 2.0em;
   color: #ffffff;
   cursor: pointer;
 }
 /*menuen slutter her*/
-
-/*start mediaqueries*/
-@media screen and (max-width: 560px) {
-#dorte nav {
-  display: none; /*nav menubar forsvinder*/
-}
-}
-
-@media screen and (max-width: 880px) {
-  #dorte main section {/*de 3 kasser ændres til fuldskærmsstørrelse*/
-    width: 97%;
-    height: 30%;
-    margin: 1.5%;
-    padding-right: 5%;
-}
-  #dorte main section h1{
-    padding-top: 30px; /*lidt større padding over h1*/
-}
-}
-/*slut mediaqueries*/

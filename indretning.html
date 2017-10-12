@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+  <!-- Webbrowser karaktersæt UTF-8 for de fleste symboler og karakterer -->
+  <meta charset="utf-8">
+  <!-- Titel for siden -->
+  <title>Inspiration</title>
+  <!-- Link til stylesheet -->
+  <link href="stylecaroline.css" rel="stylesheet" type="text/css">
+  <!-- Link til font google -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+      <!-- Meta tag for mobilvisning -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Search Icon -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="dorte">
+
+  <header>
+    <div id="header">
+      <a href="index.html"><img src="./img/logoin2.png" alt="IN2 logo"></a>
+        <!-- navigationsbar menu -->
+    <nav>
+      <ul>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="inspiration.html">Inspiration</a></li>
+        <li><a href="indretning.html">Indretning</a></li>
+        <li><a href="webshop.html">Webshop</a></li>
+        </ul>
+      </nav>
+            <!-- hamburgermenuen -->
+      <div id=mynav class=navi> <!--yderste lag-->
+        <a href="javascript:void(0)" class="closebut" onclick="closeNav()">&times;</a> <!-- knap til at lukke nav-->
+
+        <div class="overlayer"> <!--indhold i yderste lag-->
+          <a href="index.html">Forside</a>
+          <a href="webshop.html">Webshop</a>
+          <a href="indretning.html">Indretning</a>
+          <a href="inspiration.html">Inspiration</a>
+          <a href="kontakt.html">Kontakt</a>
+        </div>
+      </div>
+      <span onclick="openNav()">☰</span> <!--open nav-->
+    </div>
+  </header>
+
+  <main id="caroline">
+    <!--overskrift-->
+    <section>
+        <h1>Indretning</h1>
+        <!--h2 OMSKRIVES-->
+        <h2>Her finder du tips til indrening</h2>
+      </section>
+    <!--overskrift SLUT-->
+      <section class="flex-container">
+        <!--Ægget-->
+        <article class="flex-item">
+          <h3>Indret din stue med et Dansk klassisk design ikon</h3>
+          <p>Hvis du for alvor vil have et møbel der udstråler dansk design, er Ægget utvivlsomt et af de største danske design ikoner. Møblet er anerkendt på verdensplan og er et eftertragtet samleobjekt for mange.</p>
+          <p>Hvis man sætter to af stolene sammen med et lille bor, for man det perfekte sted til at læse avisen i ro om mag.</p>
+        </article>
+        <figure class="flex-item">
+         <img src="img/egg960.jpg" alt="arne jacobsens ægget" style="width:960;height:720">
+        </figure>
+        <!--ægget SLUT-->
+        <!--S-stolen-->
+        <article class="flex-item">
+          <h3>Klassisk med et tvist</h3>
+          <p>Kan du godt lide farver, men vil gerne have noget der
+            er klassisk design? Så skal du tage et kig på Verner
+            Pantons fantasifulde møbler. Panton havde en vision om,
+            at verden ville være lysere uden hvid. Dette ses tydeligt
+            i han brug af stærke farver og iøjnefaldende design.
+            S-stolen er et glimrende eksempel på dette, da denne
+            på en gang formå at være minimalistisk men samtidig
+            et lille kunstværk i sig selv.</p>
+          <p>Stolen er oplagt,
+            hvis man mangler et par stole til samtalekøkkenet,
+            for at bryde de store monotone flader. Der bliver
+            ingen akavet tavshed, da S-stolen er den perfekte
+            samtale starter.</p>
+        </article>
+        <figure class="flex-item">
+         <img src="img/sstolpanton960.jpg" alt="verner pantons s stol" style="width:960;height:720">
+        </figure>
+        <!--S-stolen SLUT-->
+      </section>
+      <section class="flex-container-one">
+        <!--Y-stolen-->
+        <article class="flex-item-one">
+          <h3>Flot og funktionelt design til middagsbordet</h3>
+          <p>Hvis man er inviteret på middag hos nogen, er der ikke
+             noget mere utåleligt, end en stol der er ubehagelig
+             at side i, men som ejeren købte fordi den nu engang så
+              så flot ud. Dette behøves du ikke at bekymre dig om
+              med Hans Wegners møbler. Tag for eksempel Y-stolen
+              der både er komfortable at side i og har et gennemført
+               design, ned til mindste detalje.</p>
+            <p>Stolen er perfekt til at have stående ved spisebordet,
+               men også i stuen da stolens bløde linjer indbyder til
+               en kop kaffe i ro og mag.</p>
+        </article>
+        <figure class="flex-item">
+         <img src="img/ystolenwegner960.jpg" alt="hans wegners y stol" style="width:960;height:960">
+        </figure>
+        <!--Y-stolen SLUT-->
+        <!--J39 stolen-->
+        <figure class="flex-container-one">
+          <img src="img/J39mogensen960.jpg" alt="børge mogensen J39 stol" style="width:960;height:614">
+        </figure>
+        <article>
+          <h3>Dansk design der aldrig går af mode </h3>
+          <p>Du har sikkert set den ind til flere gange i både private såvel om offentlige rum. J39 stolen også kaldet ”Folkestolen”, har fået sint kaldenavn netop af denne grund.</p>
+          <p>Med sit enkle og alsidige formsprog passer Folkestolen ind i et hvert rum. Stolen er ikke prangende som Pantons S-stol, tvært imod er den med sit alsidige udsende en stille hyldest til godt dansk håndværk på bedste maner. </p>
+        </article>
+        <!--J39 stolen SLUT-->
+      </section>
+  </main>
+
+  <footer>
+    <p>&copy; IN2 DESIGN 2017 - All Rights Reserved</p>
+  </footer>
+
+<script> /* javascript til at åbne menuen, når der klikkes på ☰-*/
+function openNav(){
+  document.getElementById("mynav").style.width = "100%";
+}
+function closeNav(){ /*javascript til at lukke menuen når der trykkes på x */
+  document.getElementById("mynav").style.width = "0%";
+}
+
+</script>
+
+</body>
+</html>

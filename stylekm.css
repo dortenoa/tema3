@@ -21,7 +21,7 @@
   border-bottom: solid 3px white; /*#414033;*/
   background-color: rgba(129,76,79,0.4); /*#814C4F;*/
   margin: 0;
-  /*overflow: hidden;*/
+  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
@@ -71,30 +71,88 @@
   color: rgb(83,112,129);
 }
 
+#dorte .lup {
+  height: 90%;
+  padding: 8px 70px 20px 10px;
+  margin: 0.2em;
+  float: right;
+  overflow: hidden;
+}
+#dorte .lup img {
 
-/*ilhan maincontent*/
-#dorte main {
-  margin-top: 120px; /* Add a top margin to avoid content overlay */
-  padding-top: 32px;
-  height: 505px;
+  }
+
+  /*katrine starter kodning/
+/*maincontent*/
+#katrine main {
+  margin: 8em 5%;
+  padding-top: 1%;
   padding-bottom: 10px;
+  background-color: white;
+  opacity: 0.95;
+  z-index: -100;
+  background-color: white;
 }
 
-#dorte main section {
+#katrine main section {
   width: 20%;
-  height: 25%;
-  padding: 4px 0;
-  margin: 0.75em;
-  background-color: rgba(83,112,129,0.6);
+  height: 30%;
+  /*padding: 8px 0;*/
+  margin: 0.7em;
+  background-color: #ffffff; /*rgba(255,255,255,0.2);*/
+  opacity: 0.3;
+
 }
 
-#dorte main section h1 {
-    color: #ffffff;
-    font-size: 180%;
-    text-align: center;
-    padding-top: 20px;
-    font-family: 'Varela Round', sans-serif;
+#katrine main section h2{
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 15%;
 }
+
+#katrine main section img {
+  width: 90%;
+  height: 100%;
+  display: block;
+  margin: auto;
+}
+/*#katrine {
+background-color: white;
+margin-top: 100px;
+height: 4000px;
+margin-left: 25px;
+margin-right: 25px;
+}*/
+
+#katrine .hejsa {
+  background-color: red;
+}
+
+#katrine h1, p{
+padding-left: 40px;
+}
+
+#katrine h1 {
+  font-family: 'Varela Round', sans-serif;
+}
+
+#katrine p{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+#katrine figure  {
+
+  text-align: center;
+}
+#katrine figure img {
+
+      max-width: 100%;
+      height: auto;
+}
+
+
+
+/*Katrine slutter kodning/
 
 /*footer*/
 #dorte footer {
@@ -108,6 +166,7 @@
   bottom: 0;
   left: 0;
   height: 34px;
+  /*opacity: 0.7;*/
 }
 
 #dorte footer p {
