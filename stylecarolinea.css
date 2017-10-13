@@ -166,6 +166,7 @@ span{
 #caroline section {
   background-color: white;
   opacity: 0.95;
+  margin: 0em 5%;
 }
 
 #caroline h1 {
@@ -174,10 +175,20 @@ span{
   margin-top: 3em;
   }
 
-#caroline h2 {
+#caroline h4 {
   text-align: left;
   padding-left: 5%;
   }
+
+#caroline section .flex-container {
+  margin: 8em 5%;
+  max-width: 90%;
+}
+
+#caroline section .flex-container-one {
+  margin: 8em 5%;
+  max-width: 90%;
+}
 
 #caroline article {
   background-color: white;
@@ -187,7 +198,7 @@ span{
   width: 100%;
   height: auto;
   padding: 5%;
-}
+  }
 
 #caroline figure {
   /*background-color: orange;*/
@@ -221,13 +232,13 @@ span{
   #caroline .flex-container {
     display: flex;
     /*flex-direction: row;*/
-    width: 100%;
+    /*width: 100%;*/
     height: auto;
     }
 
   #caroline .flex-container-one {
     display: flex;
-    width: 100%;
+    /*width: 100%;*/
     height: auto;
   }
 
