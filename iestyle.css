@@ -69,12 +69,13 @@
 #dorte li a:hover {
   color: rgb(83,112,129);
 }
+
 .flex-item h3, h2, h1 {
   font-family: 'Varela Round', sans-serif;
 }
 .flex-item p {
-  font-family: 'Varela Round', sans-serif;
-  font-size: 80%;
+  font-family: 'Open Sans Condensed', sans-serif;
+
 }
 .flex-container {
     margin-top: 9em;
@@ -86,7 +87,7 @@
     height: auto;
     background-color: rgb(255,255,255);
     justify-content: space-around;
-    z-index: -100;
+    /*z-index: -100;*/
     opacity: 0.95;
 }
 
@@ -194,5 +195,19 @@ span{
 @media screen and (max-width: 982px) {
 .flex-container {
     flex-wrap: wrap;
-  }
+}
+.flex-item {
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    margin: 4% 2% 3% 1%;
+}
+.flex-item h3, h2, h1 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 200%;
+}
+.flex-item p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 160%;
+}
 }

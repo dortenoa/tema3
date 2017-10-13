@@ -26,10 +26,10 @@
   border-bottom: solid 3px white; /*#414033;*/
   background-color: rgba(129,76,79,0.4); /*#814C4F;*/
   margin: 0;
-  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
 
 #sebastian header #header {
@@ -78,10 +78,23 @@
 }
 /*maincontent*/
 #sebastian main {
-  margin-top: 120px; /* Add a top margin to avoid content overlay */
-  padding-top: 32px;
+  /*margin-top: 120px; /* Add a top margin to avoid content overlay */
+  /*padding-top: 32px;
   height: 505px;
+  padding-bottom: 10px;*/
+
+  margin: 8em 5%;
+  padding-top: 1%;
   padding-bottom: 10px;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: white;
+  height: auto;
+  opacity: 0.95;
+}
+
+#sebastian h1 {
+  font-family: 'Varela Round', sans-serif;
 }
 
 /*#sebastian main section {
@@ -205,25 +218,29 @@ ul img{
 
 /*start mediaqueries*/
 @media screen and (max-width: 560px) {
-#dorte nav {
+#sebastian nav {
   display: none; /*nav menubar forsvinder*/
 }
-.jada{
-  width: 60%;
-  height:auto;
-}
 
+/*.jada{
+  width: 60%;
+  height:auto;*/
+}
+@media screen and (max-width: 751px) {
+  #sebastian .jada {
+      }
+}
 
 @media screen and (max-width: 845px) {
-  #dorte main section {/*de 3 kasser ændres til fuldskærmsstørrelse*/
-    width: 97%;
+  /*#dorte main section {/*de 3 kasser ændres til fuldskærmsstørrelse*/
+    /*width: 97%;
     height: 30%;
     margin: 1.5%;
-    padding-right: 5%;
+    padding-right: 5%;*/
 }
-.jada{
+/*.jada{
   width: 40%;
-  height: auto;
+  height: auto;*/
 }
   #dorte main section h1{
     padding-top: 25px; /*lidt større padding over h1*/

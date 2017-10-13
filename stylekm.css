@@ -137,7 +137,9 @@
 }
 #katrine figure img {
   max-width: 100%;
+  width: 90%;
   height: auto;
+  margin-left: 6%
 }
 
 
