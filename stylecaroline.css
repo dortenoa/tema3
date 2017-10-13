@@ -70,40 +70,6 @@
   color: rgb(83,112,129);
 }
 
-#dorte .lup {
-  height: 90%;
-  padding: 8px 70px 20px 10px;
-  margin: 0.2em;
-  float: right;
-  overflow: hidden;
-}
-#dorte .lup img {
-
-  }
-/*maincontent*/
-#dorte main {
-  margin-top: 120px; /* Add a top margin to avoid content overlay */
-  /*padding-top: 32px;
-  height: 505px;
-  padding-bottom: 10px;*/
-}
-
-#dorte main section {
-  /*width: 20%;*/
-  height: 25%;
-  padding: 4px 0;
-  margin: 0.75em;
-  background-color: rgba(83,112,129,0.6);
-}
-
-#dorte main section h1 {
-    /*color: #ffffff;*/
-    /*font-size: 180%;*/
-    text-align: center;
-    padding-top: 20px;
-    /*font-family: 'Varela Round', sans-serif;*/
-}
-
 /*footer*/
 #dorte footer {
   height: 98px;
@@ -201,9 +167,9 @@ span{
     margin: 1.5%;
     /*padding-right: 5%;*/
 }
-  #dorte main section h1{
+  /*#dorte main section h1{
     padding-top: 30px; /*lidt større padding over h1*/
-}
+}*/
 }
 /*slut mediaqueries*/
 
@@ -236,29 +202,30 @@ span{
 }
 
 #caroline section {
-  /*background-color: black;*/
-  /*width: 100%;
-  height: auto;*/
+  background-color: white;
+  opacity: 0.95;
 }
 
 #caroline h1 {
   /*background-color: rgba(83,112,129,0.6);*/
   text-align: left;
-  /*background-color: blue;*/
-}
+  padding: 5% 5% 0% 5%;
+  margin-top: 3em;
+  }
 
 #caroline h2 {
   /*background-color: green;*/
   /*background-color: rgba(83,112,129,0.6);*/
   text-align: left;
-}
+  padding-left: 5%;
+  }
 
 #caroline article {
   /*Viker ikke mednav bar og hamburger
   background-color: #FFFFFF;
   opacity: 0.95;*/
   /*background-color: rgba(83,112,129,0.6);*/
-  text-align: center;
+  text-align: left;
   display: block;
   width: 100%;
   height: auto;
