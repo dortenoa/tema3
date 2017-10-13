@@ -178,6 +178,7 @@ span{
 #caroline h4 {
   text-align: left;
   padding-left: 5%;
+  font-family: 'Open Sans Condensed';
   }
 
 #caroline section .flex-container {
@@ -199,6 +200,10 @@ span{
   height: auto;
   padding: 5%;
   }
+
+#caroline p {
+    font-family: 'Open Sans Condensed';
+}
 
 #caroline figure {
   /*background-color: orange;*/
